@@ -31,7 +31,7 @@ const oklchToHex = str => {
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://fuwari.vercel.app/', // 站点 URL
+  site: 'https://wan.li1023.cn/', // 站点 URL
   base: '/', // 基础路径
   trailingSlash: 'always', // URL 末尾总是带斜杠
   integrations: [
