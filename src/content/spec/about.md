@@ -1,9 +1,15 @@
-# About
-This is the demo site for [Fuwari](https://github.com/saicaca/fuwari).
+# 关于
+这是[li1023](https://wan.li1023.cn/)的演示站点。
 
-::github{repo="saicaca/fuwari"}
+欢迎来到我的博客，这里会分享一些技术相关的文章，也会记录生活中的点滴。
 
-> ### Sources of images used in this site
-> - [Unsplash](https://unsplash.com/)
-> - [星と少女](https://www.pixiv.net/artworks/108916539) by [Stella](https://www.pixiv.net/users/93273965)
-> - [Rabbit - v1.4 Showcase](https://civitai.com/posts/586908) by [Rabbit_YourMajesty](https://civitai.com/user/Rabbit_YourMajesty)
+# 联系
+你可以通过以下方式联系到我：
+
+- Email: <EMAIL>
+- QQ: 1234567890
+
+# 更多
+更多内容请访问[晚夜深秋-地址发布页](https://www.li1023.cn/)。
+
+

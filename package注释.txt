@@ -1,0 +1,71 @@
+{
+  "name": "fuwari", // 项目名称
+  "type": "module", // 项目类型，使用 ES 模块
+  "version": "0.0.1", // 项目版本号
+  "scripts": { // 定义常用的 npm 脚本命令
+    "dev": "astro dev", // 开发模式下启动项目
+    "start": "astro dev", // 启动项目，别名为 dev
+    "build": "astro build && pagefind --site dist", // 构建项目并使用 pagefind 进行站点索引
+    "preview": "astro preview", // 预览构建后的项目
+    "astro": "astro", // 运行 Astro 命令行工具
+    "new-post": "node scripts/new-post.js", // 创建新文章的脚本
+    "format": "biome format --write ./src", // 格式化 src 目录中的代码
+    "lint": "biome check --apply ./src" // 检查并修复 src 目录中的代码
+  },
+  "dependencies": { // 项目依赖
+    "@astrojs/check": "^0.7.0", // Astro 的代码检查工具
+    "@astrojs/rss": "^4.0.6", // 生成 RSS feed 的插件
+    "@astrojs/sitemap": "^3.1.6", // 生成站点地图的插件
+    "@astrojs/svelte": "^5.6.0", // 集成 Svelte 的插件
+    "@astrojs/tailwind": "^5.1.0", // 集成 Tailwind CSS 的插件
+    "@fontsource-variable/jetbrains-mono": "^5.0.21", // JetBrains Mono 字体
+    "@fontsource/roboto": "^5.0.13", // Roboto 字体
+    "@swup/astro": "^1.4.1", // Swup 的 Astro 集成插件
+    "astro": "^4.11.0", // Astro 框架
+    "astro-compress": "^2.2.28", // Astro 的压缩插件
+    "astro-icon": "1.1.0", // Astro 的图标插件
+    "colorjs.io": "^0.5.0", // 处理颜色的库
+    "hastscript": "^9.0.0", // 构建 HAST 树的库
+    "markdown-it": "^14.1.0", // Markdown 解析器
+    "mdast-util-to-string": "^4.0.0", // 将 MDAST 节点转换为字符串的工具
+    "overlayscrollbars": "^2.8.3", // 自定义滚动条的库
+    "pagefind": "^1.1.0", // 静态站点搜索工具
+    "reading-time": "^1.5.0", // 计算阅读时间的库
+    "rehype-autolink-headings": "^7.1.0", // 自动为标题添加链接的 Rehype 插件
+    "rehype-components": "^0.3.0", // 使用组件的 Rehype 插件
+    "rehype-katex": "^7.0.0", // 解析 KaTeX 数学公式的 Rehype 插件
+    "rehype-slug": "^6.0.0", // 为标题生成 slug 的 Rehype 插件
+    "remark-directive": "^3.0.0", // 解析指令的 Remark 插件
+    "remark-directive-rehype": "^0.4.2", // Remark 指令到 Rehype 的转换插件
+    "remark-math": "^6.0.0", // 解析数学公式的 Remark 插件
+    "sanitize-html": "^2.13.0", // 清理 HTML 的库
+    "sharp": "^0.33.4", // 高性能图片处理库
+    "svelte": "^4.2.18", // Svelte 框架
+    "tailwindcss": "^3.4.4", // Tailwind CSS 框架
+    "typescript": "^5.5.2", // TypeScript 语言
+    "unist-util-visit": "^5.0.0" // 访问 UNIST 树节点的工具
+  },
+  "devDependencies": { // 开发依赖
+    "@astrojs/ts-plugin": "^1.8.0", // Astro 的 TypeScript 插件
+    "@biomejs/biome": "1.8.2", // Biome 代码检查和格式化工具
+    "@iconify-json/fa6-brands": "^1.1.19", // Font Awesome 6 品牌图标
+    "@iconify-json/fa6-regular": "^1.1.19", // Font Awesome 6 常规图标
+    "@iconify-json/fa6-solid": "^1.1.21", // Font Awesome 6 实心图标
+    "@iconify-json/material-symbols": "^1.1.82", // Material Symbols 图标
+    "@iconify/svelte": "^4.0.2", // Iconify 的 Svelte 集成
+    "@rollup/plugin-yaml": "^4.1.2", // Rollup 的 YAML 插件
+    "@tailwindcss/typography": "^0.5.13", // Tailwind CSS 的排版插件
+    "@types/markdown-it": "^14.1.1", // Markdown-it 的 TypeScript 类型定义
+    "@types/mdast": "^4.0.4", // MDAST 的 TypeScript 类型定义
+    "@types/sanitize-html": "^2.11.0", // sanitize-html 的 TypeScript 类型定义
+    "remark-github-admonitions-to-directives": "^1.0.5", // 将 GitHub 风格的提醒转换为指令的 Remark 插件
+    "sass": "^1.77.6", // Sass 编译器
+    "stylus": "^0.63.0" // Stylus 编译器
+  },
+  "pnpm": {
+    "overrides": { // pnpm 的包重写配置
+      "vite-imagetools": "^6.2.7", // 重写 vite-imagetools 版本
+      "sharp": "^0.33.0" // 重写 sharp 版本
+    }
+  }
+}

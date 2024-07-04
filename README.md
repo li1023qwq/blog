@@ -1,55 +1,52 @@
-# 🍥Fuwari
+# 🍥 晚夜深秋
 
-A static blog template built with [Astro](https://astro.build).
+根据 [Fuwari](https://github.com/saicaca/fuwari) 进行编辑和开发
 
-[**🖥️Live Demo (Vercel)**](https://fuwari.vercel.app)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏中文 README**](https://github.com/saicaca/fuwari/blob/main/README.zh-CN.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**🌏日本語 README**](https://github.com/saicaca/fuwari/blob/main/README.ja-JP.md)&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;[**📦Old Hexo Version**](https://github.com/saicaca/hexo-theme-vivia)
+[**🖥️Live Demo (li1023)**](https://wan.li1023.cn/) &nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp; 
+## ✨ 特性
 
-![Preview Image](https://raw.githubusercontent.com/saicaca/resource/main/fuwari/home.png)
+- [x] 使用 [Astro](https://astro.build) 和 [Tailwind CSS](https://tailwindcss.com) 构建
+- [x] 流畅的动画和页面过渡效果
+- [x] 支持光明/暗黑模式切换
+- [x] 可定制的主题颜色和横幅
+- [x] 响应式设计
+- [ ] 评论功能
+- [x] 搜索功能
+- [ ] 文章目录
 
-## ✨ Features
+## 🚀 如何使用
 
-- [x] Built with [Astro](https://astro.build) and [Tailwind CSS](https://tailwindcss.com)
-- [x] Smooth animations and page transitions
-- [x] Light / dark mode
-- [x] Customizable theme colors & banner
-- [x] Responsive design
-- [ ] Comments
-- [x] Search
-- [ ] TOC
+1. [使用此模板生成新仓库](https://github.com/li1023qwq/blog/generate) 或者直接 fork 这个仓库。
+2. 若要在本地编辑博客，克隆你的仓库，运行 `pnpm install` 和 `pnpm add sharp` 安装依赖。
+   - 如果未安装 [pnpm](https://pnpm.io)，请运行 `npm install -g pnpm` 进行安装。
+3. 编辑配置文件 `src/config.ts` 定制你的博客设置。
+4. 运行 `pnpm new-post <filename>` 创建新文章并编辑位于 `src/content/posts/` 中。
+5. 根据 [指南](https://docs.astro.build/en/guides/deploy/) 部署你的博客到 Vercel、Netlify、GitHub Pages 等。在部署前需要编辑 `astro.config.mjs` 中的站点配置。
 
-## 🚀 How to Use
-
-1. [Generate a new repository](https://github.com/saicaca/fuwari/generate) from this template or fork this repository.
-2. To edit your blog locally, clone your repository, run `pnpm install` AND `pnpm add sharp` to install dependencies.  
-   - Install [pnpm](https://pnpm.io) `npm install -g pnpm` if you haven't.
-3. Edit the config file `src/config.ts` to customize your blog.
-4. Run `pnpm new-post <filename>` to create a new post and edit it in `src/content/posts/`.
-5. Deploy your blog to Vercel, Netlify, GitHub Pages, etc. following [the guides](https://docs.astro.build/en/guides/deploy/). You need to edit the site configuration in `astro.config.mjs` before deployment. 
-
-## ⚙️ Frontmatter of Posts
+## ⚙️ 文章的 Frontmatter
 
 ```yaml
 ---
-title: My First Blog Post
+title: 我的第一篇博客
 published: 2023-09-09
-description: This is the first post of my new Astro blog.
+description: 这是我新博客的第一篇文章。
 image: /images/cover.jpg
 tags: [Foo, Bar]
-category: Front-end
+category: 前端
 draft: false
 ---
 ```
 
-## 🧞 Commands
+## 🧞 命令
 
-All commands are run from the root of the project, from a terminal:
+所有命令都从项目的根目录，在终端中执行：
 
-| Command                             | Action                                           |
-|:------------------------------------|:-------------------------------------------------|
-| `pnpm install` AND `pnpm add sharp` | Installs dependencies                            |
-| `pnpm dev`                          | Starts local dev server at `localhost:4321`      |
-| `pnpm build`                        | Build your production site to `./dist/`          |
-| `pnpm preview`                      | Preview your build locally, before deploying     |
-| `pnpm new-post <filename>`          | Create a new post                                |
-| `pnpm astro ...`                    | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro --help`                 | Get help using the Astro CLI                     |
+| 命令                               | 功能                                             |
+|:-----------------------------------|:--------------------------------------------------|
+| `pnpm install` 和 `pnpm add sharp` | 安装依赖                                         |
+| `pnpm dev`                          | 在 `localhost:4321` 启动本地开发服务器           |
+| `pnpm build`                        | 将项目构建到 `./dist/` 目录                      |
+| `pnpm preview`                      | 在部署前本地预览构建结果                         |
+| `pnpm new-post <filename>`          | 创建新文章                                       |
+| `pnpm astro ...`                    | 运行 Astro CLI 命令，如 `astro add`、`astro check` |
+| `pnpm astro --help`                 | 获取 Astro CLI 帮助信息                          |
