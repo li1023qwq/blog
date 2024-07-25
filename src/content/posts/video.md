@@ -1,6 +1,6 @@
 ---
 title: 在文章中嵌入视频
-published: 2023-08-01
+published: 2023-05-01
 description: 本文展示了如何在博客文章中嵌入视频。
 tags: [示例, 视频]
 category: 示例

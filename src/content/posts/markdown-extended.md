@@ -1,6 +1,6 @@
 ---
 title: Markdown 扩展功能
-published: 2024-05-01
+published: 2023-05-01
 description: '阅读更多关于Markdown功能的信息'
 image: ''
 tags: [示例, 例子, Markdown]
