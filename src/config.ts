@@ -39,10 +39,9 @@ export const navBarConfig: NavBarConfig = {
     LinkPreset.Home, // 预设的主页链接
     LinkPreset.Archive, // 预设的存档链接
     LinkPreset.About, // 预设的关于页面链接
-
     {
       name: 'li1023', // 自定义链接名称
-      url: 'https://www.li1023.cn', // 链接地址，这是一个外部链接
+      url: 'https://www.li1023.cn/', // 链接地址，这是一个外部链接
       external: true, // 是否为外部链接，将在新标签页中打开
     },
   ],
@@ -55,21 +54,21 @@ export const profileConfig: ProfileConfig = {
   bio: '光是遇见,就已经很美好了!❤️', // 个人简介
   links: [
     {
-      name: 'wecat', // 社交链接名称
-      icon: 'fa6-brands:wechat', // 图标代码，参见 https://icones.js.org/ 获取图标代码
+      name: '哔哩哔哩', // 社交链接名称
+      icon: 'fa6-brands:bilibili', // 图标代码，参见 https://icones.js.org/ 获取图标代码
       // 如果需要使用对应的图标集，请安装对应的图标集
       // `pnpm add @iconify-json/<icon-set-name>`
       url: '#', // 链接地址
     },
     {
       name: 'QQ', // 社交链接名称
-      icon: 'fa6-brands:qq', // qq 的图标代码
+      icon: 'fa6-brands:qq', // Steam 的图标代码
       url: '#', // 链接地址
     },
     {
-      name: 'GitHub', // 社交链接名称
-      icon: 'fa6-brands:github', // GitHub 的图标代码
-      url: 'https://github.com/li1023qwq/blog', // 链接地址
+      name: '微信-wechat', // 社交链接名称
+      icon: 'fa6-brands:weixin', // GitHub 的图标代码
+      url: '#', // 链接地址
     },
   ],
 }
